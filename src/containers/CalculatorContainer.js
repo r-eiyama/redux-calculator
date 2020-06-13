@@ -7,9 +7,12 @@ import * as actions from '../actions'
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+/**
+ * 計算機の外観を作成するコンポーネント
+ */
 class CalculatorContainer extends Component {
     render() {
-        const { calculator, actions} = this.props;
+        const { calculator, actions } = this.props;
         return (
             <div>
                 <div>
@@ -39,7 +42,7 @@ class CalculatorContainer extends Component {
     }
 }
 
-const mapState = (state, ownProps) => ({
+const mapState = (state) => ({
     calculator: state.calculator,
 });
 
